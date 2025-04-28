@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cats - Paradigm Pet Professionals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="logo">
+  <a href="index.html">
+    <img src="images/logo.png" alt="Paradigm Pet Professionals Logo">
+  </a>
+</div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" id="petMenuToggle">Pet</a>
+        <ul class="dropdown-content" id="petMenu">
+          <li><a href="cats.html">Cats</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="fish.html">Fish</a></li>
+        </ul>
+      </li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="appointment.html">Appointment</a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+  </nav>
+</header>
+
+
+<!-- Overview Section -->
+<section class="info-section">
+  <div class="info-content">
+    <div class="text">
+      <h2>Overview</h2>
+      <p>Cats were first domesticated around 7500 BCE in the western Asia region and are currently the second most popular domestic pet in the United States. While there are over 60 unique documented cat breeds, care and diet can differ between breeds. However, some diets and practices are generally recommended for the well-being of your fluffy family member regardless of breed.</p>
+    </div>
+    <div class="image">
+      <img src="images/cat-overview.jpg" alt="Overview Cat Image">
+    </div>
+  </div>
+</section>
+
+<!-- Zero to Four Weeks Section -->
+<section class="info-section blue-bg">
+  <div class="info-content reverse">
+    <div class="image">
+      <img src="images/cat-newborn.jpg" alt="Newborn Kittens">
+    </div>
+    <div class="text">
+      <h2>Zero to Four Weeks</h2>
+      <p>It is important the queen (a term commonly used for a female cat that is either pregnant or nursing) directly nurse her young if possible. Monitor your kitten’s growth closely to make sure its growth rate is progressing steadily. If any kitten is not growing at a sufficient rate, a caretaker might need to feed the kitten directly either with a bottle or a feeding tube. Some reasons why kittens might not gain weight appropriately include:</p>
+      <ul>
+        <li>Too many siblings competing for milk</li>
+        <li>Gastrointestinal disease</li>
+        <li>Environmental stress (extreme heat, cold, or unsanitary conditions)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Four Weeks to One Year Section -->
+<section class="info-section">
+  <div class="info-content">
+    <div class="text">
+      <h2>Four Weeks to One Year</h2>
+     <p>
+  Kittens can start being introduced to soft wet kitten food typically around three to four weeks after birth. According to the 
+  <a href="https://www.aspca.org/" target="_blank" rel="noopener noreferrer">ASPCA</a>, 
+  kittens at this age should eat half to one cup of dry kitten food or six to nine ounces of wet kitten food per day. If your kitten has difficulties eating hard food, a small amount of water can be added to soften the food. Cat food that is optimized for kittens provides the additional nutrients that are needed for growth, energy, and wellness. Depending on the breed, your cat may have different dietary requirements. You should always consult with your veterinarian for recommendations.
+</p>
+
+    </div>
+    <div class="image">
+      <img src="images/cat-kitten.jpg" alt="Young Kitten Eating">
+    </div>
+  </div>
+</section>
+
+<!-- One Year to Seven Years Section -->
+<section class="info-section blue-bg">
+  <div class="info-content reverse">
+    <div class="image">
+      <img src="images/cat-adult.jpg" alt="Adult Cat">
+    </div>
+    <div class="text">
+      <h2>One Year to Seven Years</h2>
+      <p>At this stage, cats are considered adults and require fewer calories compared to their kitten stage. Their metabolism slows down, and it’s important not to leave food out all day to prevent overeating. Scheduled meal times help maintain a healthy weight and prevent obesity-related illnesses.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Seven Years and More Section -->
+<section class="info-section">
+  <div class="info-content">
+    <div class="text">
+      <h2>Seven Years and More</h2>
+      <p>As cats enter their senior years, dietary needs change again. Senior cats benefit from diets lower in fat and calories but higher in high-quality protein. Look for specific protein sources (e.g., "salmon") in food labels rather than vague categories like "fish," which might indicate lower quality ingredients.</p>
+    </div>
+    <div class="image">
+      <img src="images/cat-senior.jpg" alt="Senior Cat">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="FAQ.html">FAQ</a> |
+    <a href="appointment.html">Appointment</a> |
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+  <div class="footer-social">
+    <a href="appointment.html">Facebook</a> |
+    <a href="appointment.html">Instagram</a> |
+    <a href="appointment.html">Twitter</a>
+  </div>
+  <p>&copy; 2025 Pet Paradigm. All rights reserved.</p>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const petMenuToggle = document.getElementById('petMenuToggle');
+    const petMenu = document.getElementById('petMenu');
+
+    petMenuToggle.addEventListener('click', function(event) {
+      event.preventDefault();
+      petMenu.style.display = petMenu.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+
+</body>
+</html>

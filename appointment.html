@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment - Paradigm Pet Professionals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Paradigm Pet Professionals Logo">
+    </a>
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" id="petMenuToggle">Pet</a>
+        <ul class="dropdown-content" id="petMenu">
+          <li><a href="cats.html">Cats</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="fish.html">Fish</a></li>
+        </ul>
+      </li>
+       <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="appointment.html">Appointment</a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+  </nav>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const petMenuToggle = document.getElementById('petMenuToggle');
+    const petMenu = document.getElementById('petMenu');
+    petMenuToggle.addEventListener('click', function(event) {
+      event.preventDefault();
+      petMenu.style.display = petMenu.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+<!-- Appointment Form Section -->
+<section class="appointment-section">
+  <h2>Contact Us</h2>
+  <form class="appointment-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Mike Smith" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="111-111-1111" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Mike111@example.com" required>
+
+    <label for="timezone">Time Zone:</label>
+    <input type="text" id="timezone" name="timezone" placeholder="EST" required>
+
+    <label for="petname">Pet's Name:</label>
+    <input type="text" id="petname" name="petname" placeholder="Mewo" required>
+
+    <label for="pettype">Pet's Type:</label>
+    <input type="text" id="pettype" name="pettype" placeholder="American Pit Bull Terrier" required>
+
+    <label for="petage">Pet's Age (Years):</label>
+    <input type="number" id="petage" name="petage" placeholder="1" min="0" required>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="FAQ.html">FAQ</a> |
+    <a href="appointment.html">Appointment</a> |
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+  <div class="footer-social">
+    <a href="appointment.html">Facebook</a> |
+    <a href="appointment.html">Instagram</a> |
+    <a href="appointment.html">Twitter</a>
+  </div>
+  <p>&copy; 2025 Paradigm Pet Professionals. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

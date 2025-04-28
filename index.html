@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paradigm Pet Professionals- Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="logo">
+  <a href="index.html">
+    <img src="images/logo.png" alt="Paradigm Pet Professionals Logo">
+  </a>
+</div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" id="petMenuToggle">Pet</a>
+        <ul class="dropdown-content" id="petMenu">
+          <li><a href="cats.html">Cats</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="fish.html">Fish</a></li>
+        </ul>
+      </li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="appointment.html">Appointment</a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+ <section class="hero">
+  <img src="images/home.avif" alt="Home Background" class="hero-bg">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h2>Your Trusted Source for Pet Care Advice and Experts!</h2>
+    <p>At Paradigm Pet Professionals, every pet is treated like family.
+    We are committed to providing comprehensive and compassionate medical services for your furry friends, feathered companions, and even scaly little loved ones. Whether it's routine health check-ups, vaccinations, emergency treatments, or long-term care, Paradigm Pet Professionals upholds the highest standards of medical excellence and heartfelt dedication to safeguard their health and happiness.</p>
+    <a href="appointment.html" class="btn">Book an Appointment Today!</a>
+  </div>
+</section>
+
+<section class="pet-cards">
+  <h2>Pet</h2>
+  <div class="card-grid">
+    <div class="card">
+      <img src="images/cat.jpg" alt="Cat">
+      <div class="card-content">
+        <a href="cats.html" class="card-link">Cat →</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/dog.jpg" alt="Dog">
+      <div class="card-content">
+        <a href="dogs.html" class="card-link">Dog →</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/fish.jpg" alt="Fish">
+      <div class="card-content">
+        <a href="fish.html" class="card-link">Fish →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="adoption-section">
+  <div class="adoption-content">
+    <div class="adoption-image">
+      <img src="images/adoption.jpg" alt="Adoption Image">
+    </div>
+    <div class="adoption-text">
+      <h2>Adoption Resources</h2>
+      <p>Looking for your new best friend? Browse our available pet options below or check out the following organizations that can also help you find and adopt the perfect companion:</p>
+      <ul class="adoption-list">
+        <li><a href="https://home-home.org/" target="_blank" rel="noopener noreferrer">General Adoption Resources</a></li>
+        <li><a href="https://www.aspca.org/" target="_blank" rel="noopener noreferrer">ASPCA</a></li>
+        <li><a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/" target="_blank" rel="noopener noreferrer">Fish Rescue</a></li>
+        <li><a href="https://savethesnakes.org/snakerescuecall/" target="_blank" rel="noopener noreferrer">Snake Rescue</a></li>
+        <li><a href="https://ftlob.rescuegroups.org/" target="_blank" rel="noopener noreferrer">Bird Rescue</a></li>
+      </ul>
+      <p>We are also happy to help you navigate the adoption process! Please fill out our contact form to <a href="appointment.html">request a consultation</a>. We will contact you within 48 hours to schedule a consultation.</p>
+    </div>
+  </div>
+</section>
+
+
+
+</main>
+
+<footer>
+  <div class="footer-links">
+  <a href="FAQ.html">FAQ</a> |
+    <a href="appointment.html">Appointment</a> |
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+  <div class="footer-social">
+    <a href="appointment.html">Facebook</a> |
+    <a href="appointment.html">Instagram</a> |
+    <a href="appointment.html">Twitter</a>
+  </div>
+  <p>&copy; 2025 Pet Paradigm. All rights reserved.</p>
+</footer>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const petMenuToggle = document.getElementById('petMenuToggle');
+    const petMenu = document.getElementById('petMenu');
+
+    petMenuToggle.addEventListener('click', function(event) {
+      event.preventDefault();
+      petMenu.style.display = petMenu.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Paradigm Pet Professionals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Paradigm Pet Professionals Logo">
+    </a>
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" id="petMenuToggle">Pet</a>
+        <ul class="dropdown-content" id="petMenu">
+          <li><a href="cats.html">Cats</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="fish.html">Fish</a></li>
+        </ul>
+      </li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="appointment.html">Appointment</a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+  </nav>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const petMenuToggle = document.getElementById('petMenuToggle');
+    const petMenu = document.getElementById('petMenu');
+    petMenuToggle.addEventListener('click', function(event) {
+      event.preventDefault();
+      petMenu.style.display = petMenu.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <h3>What vaccinations does my dog or cat need?</h3>
+      <p>Core vaccines for dogs include rabies, parvovirus, and distemper. Core vaccines for cats include rabies, panleukopenia, and feline herpesvirus. Always consult your veterinarian for personalized recommendations.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How often should I bring my pet to the vet?</h3>
+      <p>It is recommended to schedule a wellness checkup for your pet at least once a year. Puppies, kittens, and senior pets may require more frequent visits.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I make tap water safe for my aquarium fish?</h3>
+      <p>Use a water conditioner specifically designed to neutralize chlorine, chloramine, and heavy metals. You can also reference resources like for more detailed guidance.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What should I feed my kitten or puppy?</h3>
+      <p>Feed a diet specifically formulated for kittens or puppies. These foods provide the higher calorie and nutrient levels necessary for healthy growth. Transition to adult food around 12 months old, depending on breed size.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I prevent fleas and ticks on my pet?</h3>
+      <p>Use veterinarian-recommended flea and tick preventatives regularly. Check your pets after walks, especially if they have been in grassy or wooded areas.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How much exercise does my dog need?</h3>
+      <p>Most dogs need at least 30 minutes to 2 hours of exercise daily, depending on breed, size, and health. Walks, playtime, and interactive toys are great ways to ensure your dog stays active and healthy.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="FAQ.html">FAQ</a> |
+    <a href="appointment.html">Appointment</a> |
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+  <div class="footer-social">
+    <a href="appointment.html">Facebook</a> |
+    <a href="appointment.html">Instagram</a> |
+    <a href="appointment.html">Twitter</a>
+  </div>
+  <p>&copy; 2025 Paradigm Pet Professionals. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

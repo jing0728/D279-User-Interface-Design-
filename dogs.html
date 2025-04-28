@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dogs - Paradigm Pet Professionals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Paradigm Pet Professionals Logo">
+    </a>
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" id="petMenuToggle">Pet</a>
+        <ul class="dropdown-content" id="petMenu">
+          <li><a href="cats.html">Cats</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="fish.html">Fish</a></li>
+        </ul>
+      </li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="appointment.html">Appointment</a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+  </nav>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const petMenuToggle = document.getElementById('petMenuToggle');
+    const petMenu = document.getElementById('petMenu');
+    petMenuToggle.addEventListener('click', function(event) {
+      event.preventDefault();
+      petMenu.style.display = petMenu.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+<section class="info-section">
+  <div class="info-content">
+    <div class="text">
+      <h2>Overview</h2>
+     <p>
+  The domestic dog is an extremely social animal and offers a diverse variety of choices as there are well over 300 breeds recognized by the World Canine Organization. Adopting a dog offers mutual benefits between dog and owner. Many studies cite the social benefits of having a companion as well as the reduced feelings of loneliness from adopting a dog. Studies even show medical indicators such as 
+  <a href="https://www.ahajournals.org/doi/10.1161/CIRCOUTCOMES.119.005554" target="_blank" rel="noopener noreferrer">
+    reduced blood pressure and improved lipid profiles
+  </a>.
+  If you have a dog, it is important to make sure that you care for your dog; be mindful of what you feed your dog and provide enough opportunities for exercise. In this page, you will find more information about how to care for your pets throughout the various stages of their lives.
+</p>
+
+    </div>
+    <div class="image">
+      <img src="images/dog-overview.jpg" alt="Dog Overview">
+    </div>
+  </div>
+</section>
+
+<!-- Diet & Exercise Section -->
+<section class="info-section blue-bg">
+  <div class="info-content reverse">
+    <div class="image">
+      <img src="images/dog-diet-exercise.jpg" alt="Dog Exercise">
+    </div>
+    <div class="text">
+      <h2>Diet & Exercise</h2>
+      <p>Throughout dogs' lifespans, they should generally be fed fewer meals as they mature. Puppies should be nursed the first two months, then introduced to three meals per day when they are about three to six months old. Their food intake should be reduced to two meals per day when they are six months to one year old and finally reduced to one meal after they reach one year old. A dog's typical body mass is composed of 60-70% water. The <a href="https://www.aspca.org/" target="_blank" rel="noopener noreferrer">ASPCA</a> says just a 10% decrease in body water can cause illness, and a 15% loss can cause death, so hydration is essential!</p>
+      <p>Much like humans, dogs need regular activity to stay healthy. Exercise needs vary greatly by breed and size, but typically 30–120 minutes of exercise per day is recommended! Brisk walks are excellent, and choosing age-appropriate toys can help encourage physical activity. Always supervise toys that could pose a choking hazard.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Grooming & Handling Section -->
+<section class="info-section">
+  <div class="info-content">
+    <div class="text">
+      <h2>Grooming & Handling</h2>
+      <p>Keeping your furry family member clean is vital for their health. Regular brushing reduces shedding and prevents painful mats and tangles. Always check for ticks and fleas after outdoor adventures. When bathing, make sure to rinse all soap out and use formulas specifically made for dogs to avoid allergic reactions. When carrying dogs, small dogs should be cradled with one hand under the chest and the forearm supporting the hindquarters, while large dogs should be lifted by supporting their chest and rear with both arms.</p>
+    </div>
+    <div class="image">
+      <img src="images/dog-grooming.jpg" alt="Dog Grooming">
+    </div>
+  </div>
+</section>
+
+<!-- Vaccinations & Medications Section -->
+<section class="info-section blue-bg">
+  <div class="info-content reverse">
+    <div class="image">
+      <img src="images/dog-vaccination.jpg" alt="Dog Vaccination">
+    </div>
+    <div class="text">
+      <h2>Vaccinations & Medications</h2>
+      <<p>
+  You should always consult with your veterinarian, but there is a core set of vaccines that are typically recommended. Vaccines that reduce the exposure risk to things such as hepatitis, rabies, and parvovirus. Others may be determined by your vet depending on the environment in which the dog resides. Some of these include 
+  <a href="https://www.aspca.org/pet-care/general-pet-care/vaccinations-your-pet" target="_blank" rel="noopener noreferrer">
+    Bordetella bronchiseptica, Borrelia burgdorferi, and Leptospira bacteria
+  </a>.
+</p>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="FAQ.html">FAQ</a> |
+    <a href="appointment.html">Appointment</a> |
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+  <div class="footer-social">
+    <a href="appointment.html">Facebook</a> |
+    <a href="appointment.html">Instagram</a> |
+    <a href="appointment.html">Twitter</a>
+  </div>
+  <p>&copy; 2025 Pet Paradigm. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

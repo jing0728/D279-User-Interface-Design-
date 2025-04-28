@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fish - Paradigm Pet Professionals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Paradigm Pet Professionals Logo">
+    </a>
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" id="petMenuToggle">Pet</a>
+        <ul class="dropdown-content" id="petMenu">
+          <li><a href="cats.html">Cats</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="fish.html">Fish</a></li>
+        </ul>
+      </li>
+       <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="appointment.html">Appointment</a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+  </nav>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const petMenuToggle = document.getElementById('petMenuToggle');
+    const petMenu = document.getElementById('petMenu');
+    petMenuToggle.addEventListener('click', function(event) {
+      event.preventDefault();
+      petMenu.style.display = petMenu.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+<section class="info-section">
+  <div class="info-content">
+    <div class="text">
+      <h2>Overview</h2>
+      <p>Fish represent a broad class of aquatic animals that can live in fresh or saltwater, depending on the species. Bringing fish into your home can be an exciting hobby, especially if you intend to breed them, and the presence of a fish tank in your home can induce feelings of peace and tranquility.</p>
+      <p>Whether you are bringing your fish home for the first time or maintaining your aquarium, it is important to test your water once per week to ensure it is free from toxins that can harm your fish.</p>
+    </div>
+    <div class="image">
+      <img src="images/fish-overview.jpg" alt="Fish Overview">
+    </div>
+  </div>
+</section>
+
+<!-- Freshwater Fish Section -->
+<section class="info-section blue-bg">
+  <div class="info-content reverse">
+    <div class="image">
+      <img src="images/fish-freshwater.jpg" alt="Freshwater Fish">
+    </div>
+    <div class="text">
+      <h2>Freshwater Fish</h2>
+      <p>There are several freshwater fish to choose from when setting up your aquarium, but it is best to 
+        <a href="appointment.html">consult with a “Pexpert”</a> to ensure your fish will get along! 
+        No matter the species, ensure your fish are suited for a freshwater environment by investing in a water testing kit. Follow these general water chemistry guidelines to ensure your fish will adapt well to your aquarium and avoid ingesting toxins that can harm or kill your fish:</p>
+      <ul>
+        <li><strong>pH Level:</strong> 6.8-7.6 (7.0 is considered neutral)</li>
+        <li><strong>Ammonia:</strong> any level above zero is harmful to fish</li>
+        <li><strong>Nitrates:</strong> 5 to 10 ppm</li>
+        <li><strong>Nitrites:</strong> less than 0.5 ppm</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Saltwater Fish Section -->
+<section class="info-section">
+  <div class="info-content">
+    <div class="text">
+      <h2>Saltwater Fish</h2>
+      <p>Saltwater fish also offer several options when it comes to choosing among species for your aquarium. As with freshwater fish, 
+        <a href="appointment.html">consult with a “Pexpert”</a> to ensure your fish will get along and are suited for a saltwater environment. 
+        Follow these general guidelines to avoid dangerous water conditions and ensure the appropriate salinity level for your fishies:</p>
+      <ul>
+        <li><strong>Salinity:</strong> 1.020-1.028 sg</li>
+        <li><strong>pH Level:</strong> 7.6-8.4 (7.0 is considered neutral)</li>
+        <li><strong>Ammonia:</strong> any level above 0.1 ppm requires attention</li>
+        <li><strong>Nitrates:</strong> 10 to 40 ppm</li>
+        <li><strong>Nitrites:</strong> less than 0.2 ppm</li>
+      </ul>
+      <p>For more information on making your tap water safe for your fish, please visit 
+        <a href="http://www.theaquariumwiki.org/wiki/How_to_make_tap_water_safe_for_fish" target="_blank" rel="noopener noreferrer">The Aquarium Wiki</a> and 
+        <a href="http://fishbase.org/home.htm" target="_blank" rel="noopener noreferrer">FishBase</a>.
+      </p>
+    </div>
+    <div class="image">
+      <img src="images/fish-saltwater.jpg" alt="Saltwater Fish">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="FAQ.html">FAQ</a> |
+    <a href="appointment.html">Appointment</a> |
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+  <div class="footer-social">
+    <a href="appointment.html">Facebook</a> |
+    <a href="appointment.html">Instagram</a> |
+    <a href="appointment.html">Twitter</a>
+  </div>
+  <p>&copy; 2025 Paradigm Pet Professionals. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
